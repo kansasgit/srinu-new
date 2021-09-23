@@ -1,0 +1,184 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/bootstrap.min.js"></script>
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body style="background: #F7F8FC 0% 0% no-repeat padding-box;opacity: 1;">
+<div class="container-fluid px-1 py-5 mx-auto">
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-8 col-lg-9 col-md-9 col-11 text-center">
+           
+            <div class="card">
+               
+                <form class="form-card" onsubmit="event.preventDefault()">
+				<section class="top-sec">
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Name<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Enter your first name" onblur="validate(1)"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">DOB<span class="text-danger"> *</span></label> <input type="date" id="lname" name="lname" placeholder="Enter your last name" onblur="validate(2)">
+						</div>
+                    </div>
+                    
+					
+					
+					<div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Contact No<span class="text-danger"> *</span></label> <input type="number" id="email" name="email" placeholder="" onblur="validate(3)"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Email Id<span class="text-danger"> *</span></label> <input type="text" id="mob" name="mob" placeholder="" onblur="validate(4)"> </div>
+                    </div>
+					
+					
+					
+                    <div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Client Location <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+					
+
+					<div class="form-group col-sm-6 flex-column d-flex"></div>
+                    </div>
+					</section>
+					<section class="master-sec">
+					<div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex master-head"><h4 class="m-class">Masters Details</h4></div>
+					
+					<div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Masters Qualification <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+					
+					
+					<div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">University Name <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+					
+					 <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Duration of Course from YYYY to YYYYY <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+					
+					
+					<div class="row justify-content-between text-left">
+                    	<div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Education Stream <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+					
+					<div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Year of Passing <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+					
+					<div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Percentage <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+					
+					<div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">No of Backlogs <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+					</section>
+					
+					<section class="batch-sec">
+					<div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex batch-head"><h4 class="b-class">Bachelors Details</h4></div>
+					
+					<div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Bachelors Qualification <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+					
+					
+					<div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">University Name <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+					
+					 <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Duration of Course from YYYY to YYYYY <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+					
+					
+					<div class="row justify-content-between text-left">
+                    	<div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Education Stream <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+					
+					<div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Year of Passing <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+					
+					<div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Percentage <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+					
+					<div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">No of Backlogs <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+					</section>
+					
+					
+					
+			<section class="high-sec">
+					<div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex high-head"><h4 class="h-class">High School Details</h4></div>
+					
+					<div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Name of the School <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+					
+					
+					<div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Percentage <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+					
+					 <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Year of Passing <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+					</section>
+					
+			<section class="sec-sec">
+					<div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex sec-head"><h4 class="s-class">Secondary School Details</h4></div>
+					
+					<div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Name of the School <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+					
+					
+					<div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Percentage <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+					
+					 <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Year of Passing <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+			</section>
+			
+			<section class="other-sec">
+					<div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Years of Gap Post Education <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+					
+					<div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Years of Work Experience if any <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+					
+					
+					<div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Which country would you like to apply <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+					
+					 <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Interested Course <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+					
+					
+					<div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Intake <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+					
+					 <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Budget Limit if any <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+					
+					<div class="row justify-content-between text-left">
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">IELTS / GRE / GMAT /PTE/TOEFL Scores if attempts <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+					
+					 <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Updated Resume Attached <span class="text-danger"> *</span></label> <input type="text" id="job" name="job" placeholder="" onblur="validate(5)"> </div>
+                    </div>
+					
+					
+					
+			</section>
+					
+					
+					
+					
+					
+					
+                    <div class="row justify-content-end">
+                        <div class="form-group col-sm-6"> <button type="submit" class="kan-button">Save Details</button> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+         $(function () {
+             $('#datetimepicker2').datetimepicker({
+                 locale: 'ru'
+             });
+         });
+      </script>
+
+
+</body>
+</html>
